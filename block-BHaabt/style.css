@@ -1,0 +1,417 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: "DM Serif Display", sans-serif;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'karla', sans-serif;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// My reset
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+button,
+input:focus,
+button:focus,
+textarea:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+button {
+    border: 0;
+    background: none;
+}
+
+input::placeholder {
+    letter-spacing: 0.04em;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+img {
+    object-fit: cover;
+}
+
+/* Custom style  */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 35px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header {
+    padding: 10px 0px;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.navigation-menu,
+.logo {
+    margin-top: 25px;
+}
+
+.logo {
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navigation-menu a {
+    color: gray;
+    margin: 0px 15px;
+}
+
+.main-nav {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.padding {
+    padding: 80px 0px;
+}
+
+.plan {
+    border: 1px solid gray;
+    padding: 12px;
+}
+
+/* main section style  */
+
+.main-section {
+    background-color: #2D2640;
+}
+
+.heading {
+    font-size: 56px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.h-1 {
+    text-decoration: overline;
+}
+
+.content {
+    /* margin: 80px 20px;
+    width: 50%; */
+    flex: 1 1 45%;
+    margin-right: 40px
+}
+
+.para {
+    color: gray;
+    line-height: 1.5;
+    margin-top: 25px;
+    text-align: justify;
+    text-transform: capitalize;
+    /* font-family: sans-serif; */
+    font-weight: lighter;
+}
+
+button {
+    margin: 40px 0px;
+}
+
+.btn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+/* image section  */
+
+.image {
+    /* position: relative; */
+}
+
+.image img {
+    /* position: absolute;
+    top: 110px;
+    right: 50px;
+    width: 400px; */
+    width: 100%;
+    margin-bottom: -200px;
+}
+
+/* section main style  */
+
+.section-main {
+    margin: 100px 0px
+}
+
+.image-section img {
+    width: 500px;
+}
+
+.content-section {
+    padding-top: 100px;
+    margin-left: 50px;
+}
+
+.content-section h2 {
+    color: black;
+    text-align: center;
+    text-transform: inherit;
+}
+
+.content-section p {
+    color: gray;
+}
+
+.content-section button a {
+    color: gray;
+    border: 1px solid gray;
+}
+
+/* Blog Section style  */
+
+.blog h3 {
+    color: black;
+    font-size: 42px;
+}
+
+.col-1-1 {
+    margin: 40px 20px;
+}
+
+.col-1-1 i {
+    color: #fff;
+    padding: 14px;
+    background-color: #8AB4F0;
+    border-radius: 50%;
+}
+
+.col-1-1 a {
+    margin-bottom: 15px;
+}
+
+.col-1-1 h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.col-1-1 p {
+    text-transform: inherit;
+    font-size: 14px;
+}
+
+.work-section {
+    background-color: #2D2640;
+    padding: 50px 0px;
+}
+
+.work-section h5 {
+    text-transform: inherit;
+}
+
+/* Pre footer style  */
+
+.footer-pre {
+    margin-top: 40px;
+}
+
+.footer-logo {
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav i {
+    color: gray;
+    font-size: 20px;
+    margin: 0px 10px;
+    vertical-align: middle;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-main {
+    margin-top: 20px;
+    background-color: #2D2640;
+    padding: 20px 0px;
+    text-align: center;
+    color: #fff;
+}
